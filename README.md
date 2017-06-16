@@ -1,11 +1,11 @@
 # goRant
-An unofficial Go client for public devrant API
+An unofficial Go client for public devRant API
 
 https://www.devrant.io/
 
 ## Table of Content
 1. [Installation](#Installation)
-2. [Documantaion](#Documentation)
+2. [Documentation](#Documentation)
 3. [Getting Started](#Getting-Started)
 4. [Todo](#Todo)
 
