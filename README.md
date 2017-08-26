@@ -1,7 +1,9 @@
 # goRant
 An unofficial Go client for public devRant API
 
-https://www.devrant.io/
+https://www.devrant.io/  
+
+[![Go Report Card](https://goreportcard.com/badge/github.com/jay9596/goRant)](https://goreportcard.com/report/github.com/jay9596/goRant)
 
 ## Table of Content
 1. [Installation](#Installation)
@@ -45,5 +47,5 @@ https://www.devrant.io/
      The _comments_ represent an array of Comment **[ ]Comment**  
  
  ## Todo
- - [ ] Add supporter ++ support   
+ - [x] Add supporter ++ support   
  - [ ] Add Tests  
