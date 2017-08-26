@@ -1,6 +1,6 @@
 package goRant
 
-//Rants is struct for recieving Rants response
+//Rants is struct for receiving Rants response
 type Rants struct {
 	Success  bool   `json:"success"`
 	Error    string `json:"error"`
@@ -27,7 +27,7 @@ type Rant struct {
 	UserScore     int      `json:"user_score"`
 }
 
-//RantRes is a struct to recieve Rant response
+//RantRes is a struct to receive Rant response
 type RantRes struct {
 	Success  bool      `json:"success"`
 	Error    string    `json:"error"`
@@ -61,7 +61,8 @@ type User struct {
 		Content Content `json:"content"`
 		Counts  Counts  `json:"counts"`
 	} `json:"content"`
-	DPP int `json:"dpp"`
+	Avatar Avatar `json:"avatar"`
+	DPP    int    `json:"dpp"`
 }
 
 //Content is a struct to save Content of a User
@@ -80,7 +81,15 @@ type Counts struct {
 	Upvotes    int `json:"upvoted"`
 	Comments   int `json:"comments"`
 	Favourites int `json:"favourites"`
-	Colabs     int `json:"colabs"`
+	Collabs    int `json:"collabs"`
+}
+
+//Avatar is a struct to save avatar information of a user profile
+// B stands for background color
+// I is the actual image of the profile
+type Avatar struct {
+	B string `json:"b"`
+	I string `json:"i"`
 }
 
 //Image struct is used to store info about Images
@@ -103,21 +112,21 @@ type News struct {
 	Action   string `json:"action"`
 }
 
-//UserRes is a struct to recieve User response
+//UserRes is a struct to receive User response
 type UserRes struct {
 	Success bool   `json:"success"`
 	Error   string `json:"error"`
 	Profile User   `json:"profile"`
 }
 
-//SearchRes is a struct to recieve Search response
+//SearchRes is a struct to receive Search response
 type SearchRes struct {
 	Success bool   `json:"success"`
 	Error   string `json:"error"`
 	Rants   []Rant `json:"results"`
 }
 
-//UserIDRes is a struct to recieve UserId response
+//UserIDRes is a struct to receive UserId response
 //that is used to fetch a User
 type UserIDRes struct {
 	Success bool   `json:"success"`
